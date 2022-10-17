@@ -1,4 +1,4 @@
-function loadHomePage(){
+export default function loadHomePage(){
     const homePage = document.createElement('div');
 
     const pageTitle = document.createElement('h1');
@@ -20,8 +20,10 @@ function loadHomePage(){
     mapLocation.alt = 'NPP map';
     homePage.classList.add('map');
 
-    
+
 
     return homePage;
 
 }
+
+console.log('homepage');
