@@ -25,7 +25,7 @@ export default function loadContactPage() {
 
     const instagram = document.createElement('a');
     instagram.href = 'instagram.com';
-    contactDiv.appendChild('instagram');
+    contactDiv.appendChild(instagram);
 
     const twitter = document.createElement('a');
     twitter.href = 'twitter.com';

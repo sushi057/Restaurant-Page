@@ -1,7 +1,6 @@
 import loadHomePage from "./home";
 import loadMenuPage from "./menu";
 import loadGalleryPage from "./gallery";
-import loadGalleryPage from "./contact";
 import loadContactPage from "./contact";
 
 const header = document.createElement('header');
@@ -50,7 +49,6 @@ content.appendChild(loadHomePage());
 content.appendChild(loadMenuPage());
 // document.body.insertBefore(header, content);
 
-
 //Gallery Page
 content.appendChild(loadGalleryPage());
 
@@ -58,4 +56,5 @@ content.appendChild(loadGalleryPage());
 content.appendChild(loadContactPage());
 
 
+document.body.appendChild(header);
 document.body.appendChild(content);
