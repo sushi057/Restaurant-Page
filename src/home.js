@@ -22,7 +22,6 @@ export default function loadHomePage(){
     homePage.appendChild(mapLocation);
 
     return homePage;
-
 }
 
 console.log('homepage');
