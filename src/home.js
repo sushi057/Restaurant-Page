@@ -21,7 +21,6 @@ export default function loadHomePage(){
     mapLocation.classList.add('map');
     homePage.appendChild(mapLocation);
 
-
     return homePage;
 
 }
