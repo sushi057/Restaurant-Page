@@ -18,10 +18,10 @@ export default function loadMenuPage() {
     momoMenu.appendChild(momoImage);
 
     //momo list
-    momoItems = ['Chicken Momo', 'Buff Momo', 'Veg Momo', 'C. Momo'];
+    const momoItems = ['Chicken Momo', 'Buff Momo', 'Veg Momo', 'C. Momo'];
     const momoList = document.createElement('ul');
 
-    for (item in momoItems){
+    for (const item of momoItems){
         momoList.appendChild(createListItem(item));
     }
 
@@ -36,10 +36,10 @@ export default function loadMenuPage() {
     burgerImage.classList.add('menu-img');
     burgerMenu.appendChild(burgerImage);
 
-    burgerItems = ['Chicken Burger', 'Grilled Burger', 'Veg Burger', 'Cheese Burger'];
+    const burgerItems = ['Chicken Burger', 'Grilled Burger', 'Veg Burger', 'Cheese Burger'];
     const burgerList = document.createElement('ul');
 
-    for (item in burgerItems){
+    for (const item of burgerItems){
         burgerList.appendChild(createListItem(item));
     }
 
@@ -54,10 +54,10 @@ export default function loadMenuPage() {
     stickImage.classList.add('menu-img');
     stickMenu.appendChild(stickImage);
 
-    stickItems = ['Chicken Sausage', 'Aaloo Stick', 'Buff Sausage', 'Veg Sausage'];
+    const stickItems = ['Chicken Sausage', 'Aaloo Stick', 'Buff Sausage', 'Veg Sausage'];
     const stickList = document.createElement('ul');
 
-    for (item in stickItems){
+    for (const item of stickItems){
         stickList.appendChild(createListItem(item));
     }
 
@@ -76,6 +76,7 @@ export default function loadMenuPage() {
 function createListItem(name){
     const listItem = document.createElement('li');
     listItem.textContent = name;
+    listItem.classList.add('menu-items');
     
     return listItem;
 }

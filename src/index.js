@@ -1,5 +1,7 @@
 import loadHomePage from "./home";
 import loadMenuPage from "./menu";
+import loadGalleryPage from "./gallery";
+
 
 const header = document.createElement('header');
 const content = document.querySelector('#content');
@@ -42,9 +44,14 @@ console.log('wtf is ogin gon');
 
 //Home Page
 content.appendChild(loadHomePage());
-document.body.insertBefore(header, content);
 
 //Menu Page
 content.appendChild(loadMenuPage());
 // document.body.insertBefore(header, content);
-document.body.appendChild(content);
+
+
+//Gallery Page
+content.appendChild(loadGalleryPage());
+
+
+//Contact Page
