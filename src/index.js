@@ -1,5 +1,7 @@
-const header = document.createElement('header');
+import loadHomePage from "./home";
 
+
+const header = document.createElement('header');
 const content = document.querySelector('#content');
 
 //Left Section with logo
@@ -36,8 +38,8 @@ navList.appendChild(createList('Gallery'));
 navList.appendChild(createList('Contact'));
 
 header.appendChild(navList);
-
-
-document.body.appendChild(header);
-
 console.log('wtf is ogin gon');
+
+//Home Page
+content.appendChild(loadHomePage());
+document.body.insertBefore(header, content);
