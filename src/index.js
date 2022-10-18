@@ -1,7 +1,8 @@
 import loadHomePage from "./home";
 import loadMenuPage from "./menu";
 import loadGalleryPage from "./gallery";
-
+import loadGalleryPage from "./contact";
+import loadContactPage from "./contact";
 
 const header = document.createElement('header');
 const content = document.querySelector('#content');
@@ -53,5 +54,8 @@ content.appendChild(loadMenuPage());
 //Gallery Page
 content.appendChild(loadGalleryPage());
 
-
 //Contact Page
+content.appendChild(loadContactPage());
+
+
+document.body.appendChild(content);

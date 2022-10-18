@@ -20,5 +20,16 @@ export default function loadContactPage() {
     contactDiv.appendChild(mail);
 
     const facebook = document.createElement('a');
-    facebook.href = 'facebook.com;
+    facebook.href = 'facebook.com';
+    contactDiv.appendChild(facebook);
+
+    const instagram = document.createElement('a');
+    instagram.href = 'instagram.com';
+    contactDiv.appendChild('instagram');
+
+    const twitter = document.createElement('a');
+    twitter.href = 'twitter.com';
+    contactDiv.appendChild(twitter);
+
+    return contactDiv;
 }
