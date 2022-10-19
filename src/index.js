@@ -27,26 +27,26 @@ navList.appendChild(createList('Gallery'));
 navList.appendChild(createList('Contact'));
 
 header.appendChild(navList);
-console.log('wtf is going on?');
+console.log('wtfs is going on man?');
 
 //Tab Mechanism
 
 // const homeTab = document.querySelector('')
 
 
-//Home Page
-content.appendChild(loadHomePage());
+// //Home Page
+// content.appendChild(loadHomePage());
 
-//Menu Page
-content.appendChild(loadMenuPage());
-// document.body.insertBefore(header, content);
+// //Menu Page
+// content.appendChild(loadMenuPage());
+// // document.body.insertBefore(header, content);
 
-//Gallery Page
-content.appendChild(loadGalleryPage());
+// //Gallery Page
+// content.appendChild(loadGalleryPage());
 
-//Contact Page
-content.appendChild(loadContactPage());
+// //Contact Page
+// content.appendChild(loadContactPage());
 
 
 document.body.appendChild(header);
-document.body.appendChild(content);
+// document.body.appendChild(content);
