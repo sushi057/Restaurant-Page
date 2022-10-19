@@ -1,3 +1,5 @@
+import './style.css';
+
 export default function loadHomePage(){
     const homePage = document.createElement('div');
 

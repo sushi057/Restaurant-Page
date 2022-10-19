@@ -8,22 +8,6 @@ import './style.css';
 const header = document.createElement('header');
 const content = document.querySelector('#content');
 
-// //Left Section with logo
-// const logoSection = document.createElement('div');
-
-// const logoImage = document.createElement('img');
-// logoImage.src = '../src/images/logo.jpg';
-// logoImage.alt = 'npp logo';
-// logoImage.classList.add('logo-img');
-// logoSection.appendChild(logoImage);
-
-// const logoText = document.createElement('h2');
-// logoText.textContent = 'NPP BURGER HOUSE';
-// logoText.classList.add('logo-text');
-// logoSection.appendChild(logoText);
-
-// header.appendChild(logoSection);
-
 //Nav bar
 const navList = document.createElement('ul');
 navList.classList.add('nav-list');
@@ -43,7 +27,7 @@ navList.appendChild(createList('Gallery'));
 navList.appendChild(createList('Contact'));
 
 header.appendChild(navList);
-console.log('wtf is ogin gon');
+console.log('wtf is going on?');
 
 //Tab Mechanism
 

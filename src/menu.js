@@ -1,4 +1,7 @@
 console.log('menu page');
+import Momo from '../src/images/momo.jpg';
+import Burger from './images/burger.jpg';
+import Stick from './images/stick.jpg';
 
 export default function loadMenuPage() {
     const menuPage = document.createElement('div');
@@ -11,9 +14,9 @@ export default function loadMenuPage() {
     //Menu Grid
     const momoMenu = document.createElement('div');
 
-    const momoImage = document.createElement('img');
-    momoImage.src = '../src/images/momo.jpg';
-    momoImage.alt = 'momo iamge';
+    const momoImage = new Image();
+    momoImage.src = Momo;
+    momoImage.alt = 'momo';
     momoImage.classList.add('menu-img');
     momoMenu.appendChild(momoImage);
 
@@ -30,8 +33,8 @@ export default function loadMenuPage() {
     //Burger List
     const burgerMenu = document.createElement('div');
 
-    const burgerImage = document.createElement('img');
-    burgerImage.src = '../src/images/burger.jpg';
+    const burgerImage = new Image();
+    burgerImage.src = Burger;
     burgerImage.alt = 'burger iamge';
     burgerImage.classList.add('menu-img');
     burgerMenu.appendChild(burgerImage);
@@ -48,8 +51,8 @@ export default function loadMenuPage() {
     //Stick Food List
     const stickMenu = document.createElement('div');
 
-    const stickImage = document.createElement('img');
-    stickImage.src = '../src/images/sausage.jpg';
+    const stickImage = new Image();
+    stickImage.src = Stick;
     stickImage.alt = 'sausage iamge';
     stickImage.classList.add('menu-img');
     stickMenu.appendChild(stickImage);
