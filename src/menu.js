@@ -3,8 +3,10 @@ import Momo from '../src/images/momo.jpg';
 import Burger from './images/burger.jpg';
 import Stick from './images/stick.jpg';
 
+
 export default function loadMenuPage() {
     const menuPage = document.createElement('div');
+    menuPage.classList.add('menu-page');
 
     const menuTitle = document.createElement('h1');
     menuTitle.textContent = 'These are the variety of items we provide:';
@@ -13,6 +15,7 @@ export default function loadMenuPage() {
 
     //Menu Grid
     const momoMenu = document.createElement('div');
+    momoMenu.classList.add('momo-menu');
 
     const momoImage = new Image();
     momoImage.src = Momo;
@@ -32,6 +35,7 @@ export default function loadMenuPage() {
 
     //Burger List
     const burgerMenu = document.createElement('div');
+    burgerMenu.classList.add('burger-menu');
 
     const burgerImage = new Image();
     burgerImage.src = Burger;
@@ -50,6 +54,7 @@ export default function loadMenuPage() {
 
     //Stick Food List
     const stickMenu = document.createElement('div');
+    stickMenu.classList.add('stick-menu');
 
     const stickImage = new Image();
     stickImage.src = Stick;
