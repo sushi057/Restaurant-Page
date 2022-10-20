@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -14,11 +15,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
     }),
+    new NodePolyfillPlugin(),
   ],
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
-    hot: true,
+    // hot: true,
   },
   output: {
     filename: '[name].bundle.js',
@@ -39,5 +41,10 @@ module.exports = {
   },
   optimization: {
     runtimeChunk: 'single',
+  },
+  resolve: {
+    fallback: {
+      util: require.resolve("util/")
+    }
   },
 };

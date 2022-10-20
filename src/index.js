@@ -6,7 +6,10 @@ import './style.css';
 
 
 const header = document.createElement('header');
-const content = document.querySelector('#content');
+const content = document.createElement('content');
+content.classList.add('content');
+
+
 
 //Nav bar
 const navList = document.createElement('ul');
@@ -27,26 +30,34 @@ navList.appendChild(createList('Gallery'));
 navList.appendChild(createList('Contact'));
 
 header.appendChild(navList);
+document.body.appendChild(header);
 console.log('wtfs is going on man?');
 
+
 //Tab Mechanism
+const homeTab = document.querySelector('.Home');
+homeTab.addEventListener('click', () => {
+    content.innerHTML = '';
+    content.appendChild(loadHomePage());
+});
 
-// const homeTab = document.querySelector('')
+const menuTab = document.querySelector('.Menu');
+menuTab.addEventListener('click', () => {
+    content.innerHTML = '';
+    content.appendChild(loadMenuPage());
+})
+
+const galleryTab = document.querySelector('.Gallery');
+galleryTab.addEventListener('click', () => {
+    content.innerHTML = '';
+    content.appendChild(loadGalleryPage());
+})
+
+const contactTab = document.querySelector('.Contact');
+contactTab.addEventListener('click', () => {
+    content.innerHTML = '';
+    content.appendChild(loadContactPage());
+})
 
 
-// //Home Page
-// content.appendChild(loadHomePage());
-
-// //Menu Page
-// content.appendChild(loadMenuPage());
-// // document.body.insertBefore(header, content);
-
-// //Gallery Page
-// content.appendChild(loadGalleryPage());
-
-// //Contact Page
-// content.appendChild(loadContactPage());
-
-
-document.body.appendChild(header);
-// document.body.appendChild(content);
+document.body.appendChild(content);
