@@ -1,5 +1,5 @@
 console.log('menu page');
-import Momo from '../src/images/momo.jpg';
+import Momo from './images/momo.jpg';
 import Burger from './images/burger.jpg';
 import Stick from './images/stick.jpg';
 

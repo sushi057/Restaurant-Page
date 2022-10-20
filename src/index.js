@@ -33,7 +33,7 @@ document.body.appendChild(header);
 console.log('wtfs is going on man?');
 
 //load homepage by default
-content.appendChild(loadContactPage());
+content.appendChild(loadGalleryPage());
 
 //Tab Mechanism
 const homeTab = document.querySelector('.Home');
@@ -53,7 +53,7 @@ menuTab.addEventListener('click', () => {
 
 const galleryTab = document.querySelector('.Gallery');
 galleryTab.addEventListener('click', () => {
-    // galleryTab.style.pointerEvents = 'none';
+    // galleryTab.style.pointerEvents = 'none'; 
     content.innerHTML = '';
     content.appendChild(loadGalleryPage());
 })

@@ -74,14 +74,14 @@ li{
 }
 
 .detail{
-    width: 80%;
+    width: 30%;
     margin: 20px auto 64px;
     font-size: 19px;
     text-align: center;
 }
 
 iframe{
-    width: 80%;
+    width: 60%;
 }
 
 /* Menu Page */
@@ -127,6 +127,17 @@ iframe{
 
 /* Gallery Page */
 
+.gallery-grid{
+    margin: 52px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.gallery-grid img{
+    height: auto;
+    width: 480px;
+}
 
 
 /* Contact Page */
