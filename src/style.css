@@ -1,3 +1,10 @@
+:root{
+    --primary: #000000;
+    --secondary: #CF0A0A;
+    --accent-1: #DC5F00;
+    --accent-2: #EEEEEE;
+}
+
 *{
     padding: 0;
     margin: 0;

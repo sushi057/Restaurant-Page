@@ -4,11 +4,9 @@ import loadGalleryPage from "./gallery";
 import loadContactPage from "./contact";
 import './style.css';
 
-
 const header = document.createElement('header');
 const content = document.createElement('content');
 content.classList.add('content');
-
 
 
 //Nav bar
