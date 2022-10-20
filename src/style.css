@@ -98,12 +98,13 @@ iframe{
 
 .menu-page h1{
     font-size: 40px;
+    margin-top: 24px;
 }
 
 .momo-menu, .burger-menu, .stick-menu{
     display: flex;
-    align-items: center;
-    margin: 36px;
+    /* align-items: center; */
+    margin: 48px;
     width: 60%;
     justify-content: space-between;
 }
@@ -112,3 +113,14 @@ iframe{
     flex-direction: row-reverse;
 }
 
+.momo-menu ul, .burger-menu ul, .stick-menu ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    padding-top: 25px;
+}
+
+.menu-page li{
+    list-style: disc;
+    margin: 8px 0;
+}
