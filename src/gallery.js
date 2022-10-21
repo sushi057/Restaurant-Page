@@ -13,11 +13,6 @@ export default function loadGalleryPage() {
     const galleryDiv = document.createElement('div');
     galleryDiv.classList.add('gallery-page');
 
-    // const galleryTitle = document.createElement('h1');
-    // galleryTitle.textContent = "Gallery";
-    // galleryTitle.classList.add('gallery-title');
-    // galleryDiv.appendChild(galleryTitle);
-
     const galleryGrid = document.createElement('div');
     galleryGrid.classList.add('gallery-grid');
 
